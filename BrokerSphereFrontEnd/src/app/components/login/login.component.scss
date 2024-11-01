@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+:host {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  background-color: transparent;
+ 
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.transparent-input {
+  background-color: transparent !important; /* Ensure background remains transparent */
+  color: white !important; /* Ensure text color is white */
+}
+
+.transparent-input::placeholder {
+  color: white;
+  opacity: .6;
+}
+
+.transparent-input:focus {
+  background-color: transparent !important; /* Transparent background on focus */
+  color: white !important; /* White text on focus */
+}
+
+.transparent-input:-webkit-autofill,
+.transparent-input:-webkit-autofill:hover,
+.transparent-input:-webkit-autofill:focus,
+.transparent-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* Transparent background for autofill */
+  -webkit-text-fill-color: white !important; /* White text color for autofill */
+  transition: background-color 5000s ease-in-out 0s; /* Ensure the background remains transparent */
+}
+
+.input-group {
+  border:2px solid white;
+}
+
+.input-group-text {
+  background-color: transparent !important; /* Ensure background is transparent */
+  border: none; /* Remove border if present */
+  color: white; /* Set icon color to white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group-text i {
+  color: white !important; /* Ensure icon color is white */
+}
+
+.hidden {
+  display: none;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+// .btn-primary {
+//   background-color: #007bff;
+//   border-color: #007bff;
+// }
+
+// .btn-primary:hover {
+//   background-color: #0056b3;
+//   border-color: #004085;
+// }
+
+.opacity-text {
+  opacity: .6;
+}
+
+.terms-link {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+.toggle-password {
+  cursor: pointer;
+  background-color: transparent !important; /* Ensure background is transparent */
+  border: none; /* Remove border if present */
+  color: white; /* Set icon color to white */
+}

@@ -1,0 +1,214 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "node_modules/bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+// $primary: #ffcc00; // Colore primario
+// $secondary: #ffffff; // Colore secondario
+// $body-bg: #0e1014; // Colore di sfondo per il tema dark
+// $text-color: #ffffff; // Colore del testo per il tema dark
+
+$body-bg: #00084B; // Sfondo generale
+$navbar-bg: #0b1426; // Sfondo della navbar
+$chart-bg: #010B2D; // Sfondo del grafico
+$card-bg: #000C62; // Sfondo delle card
+$btn-primary-bg: #1549bc; // Sfondo dei bottoni
+//$title-color: #1199fa; // Colore dei titoli e icone
+$text-light: #ffffff; // Colore dei titoli h1-h2
+
+$increase-color: #00a68c; // Colore per aumenti
+$decrease-color: #ff0000; // Colore per diminuzioni
+$utilities: (
+    "width": (property: width,
+        class: w,
+        responsive: true,
+        values: (
+            8:8%,
+            10:10%,
+            13:13%,
+            15:15%,
+            20:20%,
+            25: 25%,
+            30: 30%,
+            35: 35%,
+            40:40%,
+            45:45%,
+            50: 50%,
+            60: 60%,
+            65:65%,
+            70:70%,
+            75: 75%,
+            90: 90%,
+            100: 100%,
+            auto: auto,
+        ),
+    ),
+    "font-size": (property: font-size,
+        class: fs,
+        responsive: true,
+        values: (
+            1: 0.76rem,
+            // Dimensione 1
+            2: 1rem,
+            // Dimensione 2 (default)
+            3: 1.25rem,
+            // Dimensione 3
+            4: 1.5rem,
+            // Dimensione 4
+            5: 0.6rem, 
+            //Dimensione micrio,
+            6: 0.5rem,
+            7: 0.4rem,
+            8:2rem,
+            9: 3rem,
+            10: 5rem,
+            11:2.4rem,
+            12:1.75rem,
+            13:0.86rem,
+            14:1.13rem,
+        ),
+    ),
+);
+// Importa Bootstrap
+@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body, html {
+    font-family: Helvetica, Arial, sans-serif !important;
+    color: white !important;
+    margin: 0;
+    // min-height: 100%;
+    // height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;  // Imposta il valore predefinito
+    background-repeat: no-repeat;
+  }
+  
+body {
+    background-color: $body-bg;
+    color: $text-light;
+
+
+}
+
+
+@media (max-width: 768px) {
+    body, html {
+      background-image: url('./assets/img/SMART_BACKGROUND-SINGLE.png');
+    }
+  }
+  
+  @media (min-width: 769px) {
+    body, html {
+      background-image: url('./assets/img/1920X1080_BACKGROUND-SINGLE.png');
+    }}
+
+    .popover{
+    --bs-popover-body-color: white!important;// colore testo popover
+}
+
+.navbar {
+    background-color: $navbar-bg;
+}
+
+.card {
+    background-color: $card-bg;
+    color: $text-light;
+}
+
+.btn-primary {
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-bg;
+}
+
+h1,
+h2 {
+    color: $text-light;
+}
+
+// h5 {
+//     color: $title-color;
+// }
+
+// .title-icon,
+// h5 {
+//     color: $title-color;
+// }
+
+.increase {
+    color: $increase-color;
+}
+
+.decrease {
+    color: $decrease-color;
+}
+
+.chart {
+    background-color: $chart-bg;
+    color: $text-light;
+}
+button{
+    background: rgb(21,73,188);
+background: linear-gradient(90deg, rgba(21,73,188,1) 0%, rgba(25,118,210,1) 50%);
+color: white;
+}
+.card-color {
+    background-color: #010B2D;
+    padding: 10px;
+
+    // background: linear-gradient(to right, rgb(255, 255, 255) -280%, rgb(18, 32, 54) 100%, rgb(255, 255, 255) -47%);
+    //  background: linear-gradient(to right, rgb(255, 255, 255) -500%, rgb(18, 32, 54) 100%, rgb(255, 255, 255) -47%);
+    //  background: linear-gradient(to right, rgb(255, 255, 255) -640%, rgb(18, 32, 54) 100%, rgb(255, 255, 255) -47%);
+    // background: linear-gradient(to right, rgb(255, 255, 255) -640%, rgb(18, 32, 54) 70%);
+
+}
+
+.custom-popover .popover-body {
+    font-size: 1rem;
+  }
+
+  
+  
+  /* Mobile background */
+  @media (max-width: 768px) {
+    body, html{
+      background-image: url('./assets/img/SMART_BACKGROUND-SINGLE.png');
+    //   .custom-top-margin{
+    //     // margin-top: 3.5rem;
+    //   }
+
+    }
+  }
+  
+  
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+.ngb-dp-weekday, .ngb-dp-week-number {
+    font-weight: bold!important;
+    border: 1px solid white;
+}
+
+ngb-datepicker-month {
+    border: 1px solid white;
+  border-bottom-left-radius:0.5rem ;
+  border-bottom-right-radius:0.5rem ;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+
+}
+
+.NgxEditor {
+    background: #ffffff00!important;
+}
+
+.over:hover{
+    // scale: 0.8!important;
+    color: #1885E8!important;
+    cursor: pointer;
+}

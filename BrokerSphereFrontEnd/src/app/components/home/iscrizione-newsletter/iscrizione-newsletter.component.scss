@@ -1,0 +1,9 @@
+.email-input {
+  background-color: transparent;
+  border: 2px solid #fff; /* Puoi modificare il colore del bordo come preferisci */
+  color: #fff; /* Colore del testo */
+}
+
+.email-input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Colore del placeholder */
+}

@@ -1,0 +1,23 @@
+.social {
+  
+    color: white;
+    font-size: 0.4em;
+   
+}
+
+
+.social a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+footer {
+    background: none;// Assicurati che il footer non abbia uno sfondo proprio
+ 
+    background-color: #010B2D;  
+ }

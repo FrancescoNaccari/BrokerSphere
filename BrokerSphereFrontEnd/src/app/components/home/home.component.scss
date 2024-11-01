@@ -1,0 +1,154 @@
+:host {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.icon {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+div {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 310px;
+    height: 70px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#d7cfcf, #9198e5);
+}
+
+.card:hover>.img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+.textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span {
+    font-size: 10px;
+}
+
+.h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.detail {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .custom-spinner {
+    position: relative;
+    width: 25%;
+    height:15%;
+  }
+  
+  .custom-spinner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: heartbeat 1s infinite alternate;
+  }
+  
+  .custom-spinner img:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  
+  .loading-bar-container {
+    width: 40%; /* Adjusted to match the larger spinner */
+    margin-top: 30px;
+  }
+  
+  .loading-bar {
+    width: 0;
+    height: 10px; /* Increased height */
+    background-color: #1976d2;
+    animation: loading 3s infinite;
+  }
+  
+  @keyframes loading {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 50%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @media (min-width: 1440px) {
+    .custom-spinner {
+      height: 20%;
+    }
+  }
+  @media (min-width: 1650px) {
+    .custom-spinner {
+      height: 25%;
+    }
+  }
+  @media (max-width: 991px) {
+    .custom-spinner {
+      width: 40%;
+    }
+  }

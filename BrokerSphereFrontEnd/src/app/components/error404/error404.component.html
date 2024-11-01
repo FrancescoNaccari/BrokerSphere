@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="position-absolute">
+    <p class="text-center fw-bold p-0 fs-2 fs-md-3 fs-lg-9 m-1 m-sm-2">
+      {{ 'error404.ERROR_MESSAGE' | translate }}
+      <a [routerLink]="['/']" routerLinkActive="active">{{ 'error404.HOME_LINK' | translate }}</a>
+    </p>
+    <div class="text-center mt-3">
+      <div class="custom-spinner">
+        <img src="../../../assets/img/ICON_LOGO-ICON-TEXT-WHITE.png" class="heartbeat" alt="Loading Icon 1">
+        <img src="../../../assets/img/ICON_LOGO ICON.png" class="heartbeat" alt="Loading Icon 2">
+      </div>
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+      <p class="text-light mt-2">
+        {{ 'error404.REDIRECT_MESSAGE' | translate }} {{ countdown }} {{ 'error404.SECONDS' | translate }}
+      </p>
+    </div>
+  </div>
+</div>
